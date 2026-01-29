@@ -10,7 +10,7 @@ const routeTasks = require('./src/routes/tasks');
 //app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser.json());
 
-app.use('/api/tasks', routeTasks, (req, res) => res.sendStatus(401));
+app.use('/api/tasks', routeTasks);
 
 //app.get('*', (req, res) => {
 //  res.sendFile(path.join(__dirname + '/client/build/index.html'));
